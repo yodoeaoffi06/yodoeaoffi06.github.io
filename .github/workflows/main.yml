@@ -1,4 +1,4 @@
-name: master_6cd
+name: master CI, CD workflows
 on: 
   push:
     branches: [ "master"]
