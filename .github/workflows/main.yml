@@ -12,10 +12,16 @@ jobs:
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
-          node-version: 16.x
-
-      - name: Setup
+          node-version: 18.x
+          
+      - name: list_dir
+        run: ls -la 
+        
+      - name: setup
         run: npm ci
+
+      - name: show_node_modules
+        run: ls node_modules
 
       - name: Test
         run: |
