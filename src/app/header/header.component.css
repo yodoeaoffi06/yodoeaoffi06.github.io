@@ -1,0 +1,11 @@
+.cell-with-image {
+    position: relative; /* Establece la celda como un elemento relativo */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-in-cell {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
