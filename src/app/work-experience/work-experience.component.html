@@ -1,13 +1,19 @@
-<tr>
-    <td>{{ puesto }}</td>
-    <td>{{ empresa }}</td>
-    <td>{{ fecha_ini }}</td>
-    <td>{{ fecha_fin }}</td>
-    <td>{{ ciudad }}</td>
-    <td>{{ pais }}</td>
-    <td>
-        <ul>
-            <li *ngFor="let logro of logros">{{ logro.logro }}</li>
-        </ul>
-    </td>
-</tr>
+<table style="width: 100%;">
+    <tr>
+        <td>
+            <h2>Work Experience</h2>
+            {{ puesto }} <br>
+            {{ empresa }} <br>
+            Desde {{ fecha_ini }}  hasta {{ fecha_fin }} <br>
+            {{ ciudad }} ,{{ pais }} <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Logros</h3>
+            <ul>
+                <li *ngFor="let logro of logros">{{ logro.logro }}</li>
+            </ul>
+        </td>
+    </tr>
+</table>
