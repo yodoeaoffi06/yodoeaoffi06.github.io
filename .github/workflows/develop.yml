@@ -23,3 +23,6 @@ jobs:
       - name: show_node_modules
         run: ls node_modules
 
+      - name: Test
+        run: |
+          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
