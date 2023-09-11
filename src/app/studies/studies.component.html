@@ -1,0 +1,12 @@
+<tr>
+    <td>
+        <h2>Estudios:</h2>
+        <div *ngFor="let study of jsonData">
+            <h3>{{ study.estudio }}</h3>
+            <h4>Título: {{ study.titulo }}</h4>
+            <p>Institución: {{ study.institucion }}</p>
+            <p>Año de Inicio: {{ study.anio_inicio }}</p>
+            <p>Año de Finalización: {{ study.anio_final }}</p>
+        </div>
+    </td>
+</tr>
