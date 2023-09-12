@@ -8,9 +8,9 @@ import { BehaviorSubject } from 'rxjs/';
 @Injectable({
   providedIn: 'root'
 })
-export class StudiesService {
+export class CertificationsService {
 
-  apiURL = 'http://localhost:8080/studies';
+  apiURL = 'http://localhost:8080/certifications';
 
   constructor(private http: HttpClient) { }
 
@@ -20,7 +20,7 @@ export class StudiesService {
     })
   }
 
-  getStudies() : Observable<any> {
+  getCertifications() : Observable<any> {
     return this.http.get<any>(this.apiURL, this.httpOptions)
     .pipe(
       retry(1),
