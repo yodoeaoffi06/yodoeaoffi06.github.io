@@ -10,7 +10,7 @@ import { BehaviorSubject } from 'rxjs/';
 
 export class WorkExperienceService {
 
-  apiURL = 'http://localhost:8080/work-experience';
+  apiURL = 'https://node-api2023-service-yodoeaoffi06.cloud.okteto.net/work-experience';
 
   constructor(private http: HttpClient) { }
 

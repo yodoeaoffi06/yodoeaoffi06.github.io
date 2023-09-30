@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs/';
 })
 export class SkillsService {
 
-  apiURL = 'http://localhost:8080/skills';
+  apiURL = 'https://node-api2023-service-yodoeaoffi06.cloud.okteto.net/skills';
 
   constructor(private http: HttpClient) { }
 
