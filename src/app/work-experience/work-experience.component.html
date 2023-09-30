@@ -1,1 +1,15 @@
-<p>work-experience works!</p>
+<tr>
+    <td>
+        <h2>Experiencia Laboral:</h2>
+        <div *ngFor="let experience of jsonData">
+            <h3>{{ experience.puesto }} en {{ experience.empresa }}</h3>
+            <p>Fecha de inicio: {{ experience.fecha_ini }}</p>
+            <p>Fecha de fin: {{ experience.fecha_fin }}</p>
+            <p>Ciudad: {{ experience.ciudad }}</p>
+            <p>País: {{ experience.pais }}</p>
+            <ul>
+                <li *ngFor="let logro of experience.logros">{{ logro.logro }}</li>
+            </ul>
+        </div>
+    </td>
+</tr>
